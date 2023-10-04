@@ -1,0 +1,4 @@
+{{- if ne .isPersonalMachine true }}
+.gnupg/sshcontrol
+{{- end }}
+

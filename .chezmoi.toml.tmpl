@@ -1,0 +1,11 @@
+{{- $isPersonalMachine := promptBool "Is this a personal machine?" false -}}
+
+encryption = "gpg"
+
+[gpg]
+    args = ["--quiet"]
+    recipient = "rbrownwsws@googlemail.com"
+
+[data]
+    isPersonalMachine = {{ $isPersonalMachine }}
+
