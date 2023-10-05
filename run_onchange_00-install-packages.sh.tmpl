@@ -1,7 +1,11 @@
 {{ if eq .chezmoi.osRelease.idLike "debian" -}}
 #!/bin/sh
 echo "### Install packages ###"
-sudo apt-get install -y \
+sudo apt update
+sudo apt install -y \
     fzf \
-    zsh
+    zsh \
+    ripgrep \
+    fd-find \
+    jq
 {{ end -}}
