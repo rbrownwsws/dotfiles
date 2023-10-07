@@ -1,10 +1,24 @@
-{{- $isPersonalMachine := promptBool "Is this a personal machine?" false -}}
+{{- $personalGpgEncKeyFingerprint := "D73EDDD2DDCFF909" }}
 
+{{- $isPersonalMachine := false }}
+
+{{- $checkCmdExists := "if type %s > /dev/null; then echo 1 ; else echo 0; fi" }}
+{{- $checkSecretKeyExists := "gpg --list-secret-keys --with-colons | awk 'BEGIN { FS = \":\" ; FOUND = 0 } ; $1==\"ssb\" && $5==\"%s\" { FOUND = 1} ; END { print FOUND }'" }}
+
+{{- $haveGpg := eq "1" (output "bash" "-c" (printf $checkCmdExists "gpg") | trim) }}
+{{- $haveAwk := eq "1" (output "bash" "-c" (printf $checkCmdExists "awk") | trim) }}
+
+{{- if and $haveGpg $haveAwk }}
+{{-     $isPersonalMachine = eq "1" (output "bash" "-c" (printf $checkSecretKeyExists $personalGpgEncKeyFingerprint) | trim) }}
+{{- end }}
+
+{{- if $isPersonalMachine }}
 encryption = "gpg"
 
 [gpg]
     args = ["--quiet"]
     recipient = "rbrownwsws@googlemail.com"
+{{- end }}
 
 [data]
     isPersonalMachine = {{ $isPersonalMachine }}
