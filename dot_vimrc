@@ -1,20 +1,20 @@
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
-" Enable type file detection. Vim will be able to try to detect the type of file in use.
-filetype on
+" Load default vim config so we have a sensible base
+source $VIMRUNTIME/defaults.vim
 
-" Enable plugins and load plugin for the detected file type.
-filetype plugin on
-
-" Load an indent file for the detected file type.
-filetype indent on
+" Enable type file detection.
+filetype plugin indent on
 
 " Turn on syntax highlighting
 syntax on
 
 " Show line numbers
 set number
+
+" Show position in the file along the bottom of the screen
+set ruler
 
 " Use four spaces for tab by default
 set tabstop=4
