@@ -1,5 +1,5 @@
 {{ if eq .chezmoi.osRelease.idLike "debian" -}}
-#!/bin/sh
+#!/usr/bin/env sh
 echo "### Install packages ###"
 sudo apt update
 sudo apt install -y \

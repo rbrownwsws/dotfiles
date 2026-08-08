@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 if [ "$(getent passwd $USER | cut -d: -f7)" != "$(which zsh)" ]; then
     echo "### Changing login shell to zsh ###"
