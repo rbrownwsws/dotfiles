@@ -25,6 +25,9 @@ setopt HIST_IGNORE_SPACE
 # Activate mise environment
 eval "$(~/.local/bin/mise activate zsh)"
 
+# Set up zoxide
+eval "$(zoxide init zsh)"
+
 # Install flux command completion
 if type flux > /dev/null; then
     . <(flux completion zsh)
