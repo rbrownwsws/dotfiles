@@ -27,9 +27,16 @@ if type flux > /dev/null; then
     . <(flux completion zsh)
 fi
 
-# Set up nix tools
-if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
-    . $HOME/.nix-profile/etc/profile.d/nix.sh
+# Set up nix profile
+NIX_PROFILE="${HOME}/.nix-profile/etc/profile.d/nix.sh"
+if [ -e ${NIX_PROFILE} ]; then
+    . ${NIX_PROFILE}
+fi
+
+# Set up nix profile
+HM_PROFILE="${HOME}/.nix-profile/etc/profile.d/hm-session-vars.sh"
+if [ -e ${HM_PROFILE} ]; then
+    . ${HM_PROFILE}
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
