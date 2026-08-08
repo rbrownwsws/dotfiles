@@ -20,6 +20,9 @@ encryption = "gpg"
     recipient = "rbrownwsws@googlemail.com"
 {{- end }}
 
+[diff]
+    exclude = ["scripts"]
+
 [data]
     isPersonalMachine = {{ $isPersonalMachine }}
 
