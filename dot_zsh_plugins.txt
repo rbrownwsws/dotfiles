@@ -7,6 +7,7 @@ ohmyzsh/ohmyzsh path:lib
 # ohmyzsh plugins
 ohmyzsh/ohmyzsh path:plugins/gpg-agent
 ohmyzsh/ohmyzsh path:plugins/fzf
+ohmyzsh/ohmyzsh path:plugins/fluxcd
 
 romkatv/powerlevel10k
 

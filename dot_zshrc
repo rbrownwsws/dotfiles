@@ -28,11 +28,6 @@ eval "$(~/.local/bin/mise activate zsh)"
 # Set up zoxide
 eval "$(zoxide init zsh)"
 
-# Install flux command completion
-if type flux > /dev/null; then
-    . <(flux completion zsh)
-fi
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
