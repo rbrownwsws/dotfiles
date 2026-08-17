@@ -28,6 +28,36 @@ eval "$(~/.local/bin/mise activate zsh)"
 # Set up zoxide
 eval "$(zoxide init zsh)"
 
+# Define helper function for adding completions
+_register_completions() {
+  local cmd=$1
+  local comp_fn=$2
+  local gen_fn=$3
+
+  # If the command is not installed return early
+  if (( ! ${+commands[${cmd}]} )); then
+    return
+  fi
+
+  local comp_script="${ZSH_CACHE_DIR}/completions/_${cmd}"
+
+  # If the completion file doesn't exist yet, we need to autoload it and
+  # bind it to `${cmd}`.
+  # Once the script exists compinit will do this for us in future sessions.
+  if [[ ! -f "${comp_script}" ]]; then
+    typeset -g -A _comps
+    autoload -Uz "${comp_fn}"
+    _comps[${cmd}]="${comp_fn}"
+  fi
+
+  # Run the completion generator function in the background
+  ${=gen_fn} >| "${comp_script}" &|
+}
+
+_register_completions chezmoi _chezmoi "chezmoi completion zsh"
+_register_completions flux _flux "flux completion zsh"
+_register_completions kubectl _kubectl "kubectl completion zsh"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
