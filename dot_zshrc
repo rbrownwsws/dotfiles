@@ -54,9 +54,11 @@ _register_completions() {
   ${=gen_fn} >| "${comp_script}" &|
 }
 
+_register_completions apko _apko "apko completion zsh"
 _register_completions chezmoi _chezmoi "chezmoi completion zsh"
 _register_completions flux _flux "flux completion zsh"
 _register_completions kubectl _kubectl "kubectl completion zsh"
+_register_completions melange _melange "melange completion zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
