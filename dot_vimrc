@@ -16,9 +16,10 @@ set number
 " Show position in the file along the bottom of the screen
 set ruler
 
-" Use four spaces for tab by default
-set tabstop=4
-set softtabstop=4
+" Use two spaces for tab by default
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 
 " Highlight matching brackets
