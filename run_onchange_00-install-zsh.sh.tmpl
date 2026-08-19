@@ -1,5 +1,6 @@
 {{- if eq .chezmoi.osRelease.idLike "debian" -}}
 #!/usr/bin/env sh
+set -eu
 
 if [ -t 0 ]; then
   printf "Try to install zsh via apt-get? [y/N] "
@@ -10,7 +11,11 @@ fi
 
 case "$answer" in
   [Yy]*)
-    sudo apt-get update
+    echo ""
+    echo "### Install/update zsh ###"
+    echo ""
+
+    sudo apt-get update -y
     sudo apt-get install -y zsh
     ;;
 

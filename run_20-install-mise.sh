@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 set -eu
 
+echo ""
+echo "### Install/update mise ###"
+echo ""
+
 MISE_INSTALL_PATH="${HOME}/.local/bin/mise"
 export MISE_INSTALL_PATH
 
