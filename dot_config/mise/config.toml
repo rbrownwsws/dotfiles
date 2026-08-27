@@ -1,6 +1,7 @@
 [tools]
 actionlint = "latest"
 apko = "latest"
+"aqua:neovim/neovim" = "latest"
 bat = "latest"
 bazelisk = "latest"
 cosign = "latest"
