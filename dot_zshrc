@@ -25,6 +25,13 @@ setopt HIST_IGNORE_SPACE
 # Activate mise environment
 eval "$(~/.local/bin/mise activate zsh)"
 
+# Activate fnm environm 
+FNM_PATH="${HOME}/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell zsh)"
+fi
+
 # Set up zoxide
 eval "$(zoxide init zsh)"
 
@@ -57,6 +64,7 @@ _register_completions() {
 _register_completions apko _apko "apko completion zsh"
 _register_completions chezmoi _chezmoi "chezmoi completion zsh"
 _register_completions flux _flux "flux completion zsh"
+_register_completions fnm _fnm "fnm completions --shell zsh"
 _register_completions kubectl _kubectl "kubectl completion zsh"
 _register_completions melange _melange "melange completion zsh"
 
