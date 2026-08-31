@@ -1,0 +1,6 @@
+enable-ssh-support
+{{- $winGpgPinGui := "/mnt/c/Program Files/Gpg4win/bin/pinentry.exe" }}
+{{- if and .isWSL ($winGpgPinGui | lstat) }}
+pinentry-program {{ $winGpgPinGui }}
+{{- end }}
+

@@ -1,4 +1,4 @@
-{{ if and (eq .chezmoi.os "linux") (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+{{ if .isWSL }}
 [".local/bin/win32yank.exe"]
   type = "archive-file"
   url = {{ gitHubLatestReleaseAssetURL "equalsraf/win32yank" "win32yank-x64.zip" | quote }}

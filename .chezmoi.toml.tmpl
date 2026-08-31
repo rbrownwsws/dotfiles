@@ -25,4 +25,5 @@ encryption = "gpg"
 
 [data]
     isPersonalMachine = {{ $isPersonalMachine }}
+    isWSL = {{ and (eq .chezmoi.os "linux") (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
 
