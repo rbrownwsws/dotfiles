@@ -1,0 +1,34 @@
+[user]
+	name = Ross Brown
+	email = rbrownwsws@googlemail.com
+	signingkey = 3D174172A6EE89A4!
+
+[init]
+	defaultBranch = master
+
+[core]
+	autocrl = input
+	{{- if eq .chezmoi.os "windows" }}
+	sshCommand = C:\Windows\System32\OpenSSH\ssh.exe
+	{{- end }}
+
+[commit]
+	gpgsign = true
+
+{{ if eq .chezmoi.os "windows" -}}
+
+[gpg]
+	program = {{ output "powershell" "-NoProfile" "-NonInteractive" "-ExecutionPolicy" "Bypass" "-Command" "Convert-Path (Get-Command gpg).source" }}
+{{- end }}
+
+{{- if lookPath "git-lfs" }}
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+{{- end }}
+
+[credential "https://huggingface.co"]
+	provider = generic

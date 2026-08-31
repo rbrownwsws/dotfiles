@@ -13,7 +13,6 @@
 {{- if eq .chezmoi.os "windows" }}
 .config/mise/**
 .config/nvim/**
-.gitconfig
 .gnupg/**
 .p10k.zsh
 .vimrc
