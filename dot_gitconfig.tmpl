@@ -18,7 +18,7 @@
 {{- if eq .chezmoi.os "windows" }}
 
 [gpg]
-	program = {{ output "powershell" "-NoProfile" "-NonInteractive" "-ExecutionPolicy" "Bypass" "-Command" "Convert-Path (Get-Command gpg).source" | replace "\" "/" }}
+	program = {{ (output "powershell" "-NoProfile" "-NonInteractive" "-ExecutionPolicy" "Bypass" "-Command" "Convert-Path (Get-Command gpg).source") | replace "\\" "/" }}
 {{- end }}
 
 {{- if lookPath "git-lfs" }}
