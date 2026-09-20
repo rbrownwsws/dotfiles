@@ -62,6 +62,3 @@ else
   chmod +x "${MISE_INSTALLER_SCRIPT}"
   "${MISE_INSTALLER_SCRIPT}"
 fi
-
-~/.local/bin/mise install
-
