@@ -1,5 +1,8 @@
 export PATH=$HOME/.local/bin:$PATH
 
+# Disable omzsh self-update (we are using antidote)
+zstyle ':omz:update' mode disabled
+
 # source antidote
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
