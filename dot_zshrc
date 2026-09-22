@@ -1,5 +1,8 @@
 export PATH=$HOME/.local/bin:$PATH
 
+# Activate mise environment
+eval "$(~/.local/bin/mise activate zsh)"
+
 # Disable omzsh self-update (we are using antidote)
 zstyle ':omz:update' mode disabled
 
@@ -25,10 +28,7 @@ export EDITOR=/usr/bin/vim
 # Do not record commands thats start with space in history
 setopt HIST_IGNORE_SPACE
 
-# Activate mise environment
-eval "$(~/.local/bin/mise activate zsh)"
-
-# Activate fnm environm 
+# Activate fnm environment 
 FNM_PATH="${HOME}/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
