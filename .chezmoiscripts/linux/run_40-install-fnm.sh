@@ -6,4 +6,8 @@ echo ''
 
 curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
 
-"${HOME}/.local/share/fnm/fnm" install 24
+FNM_CMD="${HOME}/.local/share/fnm/fnm"
+
+if command -v "${FNM_CMD}" >/dev/null 2>&1; then
+  "${FNM_CMD}" install 24
+fi
