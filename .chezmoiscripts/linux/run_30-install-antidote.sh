@@ -12,5 +12,5 @@ if [ ! -d "${ANTIDOTE_HOME}" ]; then
 fi
 
 if command -v zsh >/dev/null 2>&1; then
-  zsh -c "source \"${ANTIDOTE_HOME}/antidote.zsh\" && antidote update"
+  zsh -c "source \"${ANTIDOTE_HOME}/antidote.zsh\" && antidote update --self"
 fi
