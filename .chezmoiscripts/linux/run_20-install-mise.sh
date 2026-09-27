@@ -11,7 +11,7 @@ export MISE_INSTALL_PATH
 MISE_INSTALLER_KEY_FPR="24853EC9F655CE80B48E6C3A8B81C9D17413A06D"
 
 if [ -f "${MISE_INSTALL_PATH}" ]; then
-  "${MISE_INSTALL_PATH}" self-update
+  "${MISE_INSTALL_PATH}" self-update --yes
 else
   echo "mise not installed! Installing..."
 
@@ -46,7 +46,7 @@ else
     --batch \
     --status-file "${DECRYPT_FILE_STATUS}" \
     --decrypt "${MISE_ENC_INSTALLER_SCRIPT}" \
-    > "${MISE_INSTALLER_SCRIPT}"
+    >"${MISE_INSTALLER_SCRIPT}"
 
   echo ""
   echo "### Check that correct signature was used... ###"
