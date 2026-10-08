@@ -47,38 +47,38 @@ url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/3849249
 provenance = "github-attestations"
 
 [[tools.apko]]
-version = "1.4.6"
+version = "1.4.8"
 backend = "aqua:chainguard-dev/apko"
 
 [tools.apko."platforms.linux-arm64"]
-checksum = "sha256:5a9344fa792fe1ab8454133233a34c044f15aafed03c6621880fb9a58e23674f"
-url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.6/apko_1.4.6_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/600868768"
+checksum = "sha256:7cc6ddd6a5023d32aedf62611432b451ba782585df3c4de64442e3289fdaf248"
+url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.8/apko_1.4.8_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/613344441"
 
 [tools.apko."platforms.linux-arm64-musl"]
-checksum = "sha256:5a9344fa792fe1ab8454133233a34c044f15aafed03c6621880fb9a58e23674f"
-url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.6/apko_1.4.6_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/600868768"
+checksum = "sha256:7cc6ddd6a5023d32aedf62611432b451ba782585df3c4de64442e3289fdaf248"
+url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.8/apko_1.4.8_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/613344441"
 
 [tools.apko."platforms.linux-x64"]
-checksum = "sha256:bbe51cce228b70aef68f436da4fc11b5d235b06f8fc1d4c35b39116b86895271"
-url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.6/apko_1.4.6_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/600868827"
+checksum = "sha256:3a90aa8b86df51e25db9e29a8b87b468ed716eef0de251fc9d8b1e6d0bf71c8e"
+url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.8/apko_1.4.8_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/613344382"
 
 [tools.apko."platforms.linux-x64-musl"]
-checksum = "sha256:bbe51cce228b70aef68f436da4fc11b5d235b06f8fc1d4c35b39116b86895271"
-url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.6/apko_1.4.6_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/600868827"
+checksum = "sha256:3a90aa8b86df51e25db9e29a8b87b468ed716eef0de251fc9d8b1e6d0bf71c8e"
+url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.8/apko_1.4.8_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/613344382"
 
 [tools.apko."platforms.macos-arm64"]
-checksum = "sha256:c6bc6a949665702d179ae8aa0d94669e7fc6883a6b9e2f053470adae9b723b81"
-url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.6/apko_1.4.6_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/600868822"
+checksum = "sha256:a6676c6b80eede63a1bbc7e1920d67eaa14039a0d2b8f1a076503cf772d0a331"
+url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.8/apko_1.4.8_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/613344369"
 
 [tools.apko."platforms.macos-x64"]
-checksum = "sha256:107660b16fd7991c225b69fcd193f331250cd641bcd4e2a12578bdf25fd3b231"
-url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.6/apko_1.4.6_darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/600868821"
+checksum = "sha256:8bd3ef36cc0d7bb1174aabf58337b9fbff26a9a580de6295897d39abfb61e286"
+url = "https://github.com/chainguard-dev/apko/releases/download/v1.4.8/apko_1.4.8_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/apko/releases/assets/613344437"
 
 [[tools."aqua:neovim/neovim"]]
 version = "0.12.5"
@@ -244,38 +244,38 @@ url_api = "https://api.github.com/repos/sigstore/cosign/releases/assets/50328623
 provenance = "cosign"
 
 [[tools.delta]]
-version = "0.20.0"
+version = "0.20.1"
 backend = "aqua:dandavison/delta"
 
 [tools.delta."platforms.linux-arm64"]
-checksum = "sha256:c3730d1f774c59066bafb91cead886a1a30ebefca707359a4513fa8e45a6b81f"
-url = "https://github.com/dandavison/delta/releases/download/0.20.0/delta-0.20.0-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610057558"
+checksum = "sha256:da7f4338f593572ff426ae153e0870e2fdc72729416eff551b40cdeb67940db8"
+url = "https://github.com/dandavison/delta/releases/download/0.20.1/delta-0.20.1-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610499593"
 
 [tools.delta."platforms.linux-arm64-musl"]
-checksum = "sha256:c3730d1f774c59066bafb91cead886a1a30ebefca707359a4513fa8e45a6b81f"
-url = "https://github.com/dandavison/delta/releases/download/0.20.0/delta-0.20.0-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610057558"
+checksum = "sha256:da7f4338f593572ff426ae153e0870e2fdc72729416eff551b40cdeb67940db8"
+url = "https://github.com/dandavison/delta/releases/download/0.20.1/delta-0.20.1-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610499593"
 
 [tools.delta."platforms.linux-x64"]
-checksum = "sha256:d230b86c51e4764f0bc3285859652316c26ff39f2283d44f97a9d54387bcab4e"
-url = "https://github.com/dandavison/delta/releases/download/0.20.0/delta-0.20.0-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610056023"
+checksum = "sha256:50f08c879f84c81ceb220e476491a7f492d2c9c671e79918cc44badf961a6240"
+url = "https://github.com/dandavison/delta/releases/download/0.20.1/delta-0.20.1-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610498121"
 
 [tools.delta."platforms.linux-x64-musl"]
-checksum = "sha256:6566c4ca33558f0b63ead06febdc4e50ed05fba3becd70d35329c5120fb698d3"
-url = "https://github.com/dandavison/delta/releases/download/0.20.0/delta-0.20.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610056836"
+checksum = "sha256:69dcb4043f55c29118f408c6efd30115e0a4e0a6709253343b8c8fa814ab4a31"
+url = "https://github.com/dandavison/delta/releases/download/0.20.1/delta-0.20.1-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610498263"
 
 [tools.delta."platforms.macos-arm64"]
-checksum = "sha256:e50d88b6b16e15bc9fef9034b2007fe4a217e8bd61061665966058eb82c1eb84"
-url = "https://github.com/dandavison/delta/releases/download/0.20.0/delta-0.20.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610056040"
+checksum = "sha256:bc1839cea69288d4673a24faffbb825d408ca907e0f7d33b1678c9e6cdd5e58e"
+url = "https://github.com/dandavison/delta/releases/download/0.20.1/delta-0.20.1-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610498923"
 
 [tools.delta."platforms.windows-x64"]
-checksum = "sha256:f1338f6f364abd4b471c45368271a7ef4bc6a87c4dbcf917f4940068176172c9"
-url = "https://github.com/dandavison/delta/releases/download/0.20.0/delta-0.20.0-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610059519"
+checksum = "sha256:c9af7484b33f1dbc1312a892fc7d5753a6d3365140a4000d49e575a2de742c25"
+url = "https://github.com/dandavison/delta/releases/download/0.20.1/delta-0.20.1-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610501426"
 
 [[tools.eza]]
 version = "0.23.5"
@@ -640,77 +640,77 @@ url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/
 url_api = "https://api.github.com/repos/kubernetes-sigs/kustomize/releases/assets/600925244"
 
 [[tools.lazygit]]
-version = "0.65.1"
+version = "0.66.0"
 backend = "aqua:jesseduffield/lazygit"
 
 [tools.lazygit."platforms.linux-arm64"]
-checksum = "sha256:49abecdf6adf4f2dfdb11bf7b9bfada267ea523612ed809d1c6d87f6c04000a7"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658270"
+checksum = "sha256:9a4fc4656897ac9f7877b835473ce1a75620cc267f554c57fc4ff266407f3257"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.0/lazygit_0.66.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/613198511"
 
 [tools.lazygit."platforms.linux-arm64-musl"]
-checksum = "sha256:49abecdf6adf4f2dfdb11bf7b9bfada267ea523612ed809d1c6d87f6c04000a7"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658270"
+checksum = "sha256:9a4fc4656897ac9f7877b835473ce1a75620cc267f554c57fc4ff266407f3257"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.0/lazygit_0.66.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/613198511"
 
 [tools.lazygit."platforms.linux-x64"]
-checksum = "sha256:02beacbcda0fa342e50ae3480ba8147307353af3fb28e1d5f790e02329c201a6"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658266"
+checksum = "sha256:5b45541155d20bd32bf2cc5ab5b7e3d91c2eebf0fb1242281350edc27d59d2b7"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.0/lazygit_0.66.0_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/613198391"
 
 [tools.lazygit."platforms.linux-x64-musl"]
-checksum = "sha256:02beacbcda0fa342e50ae3480ba8147307353af3fb28e1d5f790e02329c201a6"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658266"
+checksum = "sha256:5b45541155d20bd32bf2cc5ab5b7e3d91c2eebf0fb1242281350edc27d59d2b7"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.0/lazygit_0.66.0_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/613198391"
 
 [tools.lazygit."platforms.macos-arm64"]
-checksum = "sha256:65a367c6ea9a88efebaaf7998a6835eedb987e04916cef677264ff9b31b1b13e"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658243"
+checksum = "sha256:e9fe2fe1f1bbc1b4c3214b33e8e0d57a4d6e3c2276aa9aa713f9bcbdc223e65c"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.0/lazygit_0.66.0_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/613198499"
 
 [tools.lazygit."platforms.macos-x64"]
-checksum = "sha256:fde13daf583511aa24c42ca154911643231a5af784c7cdd8117264b2fc035b33"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_darwin_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658244"
+checksum = "sha256:2b621118f03b8249f0cc6bed378e25bf679e0ef1c97ceed01f92814f5a91a576"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.0/lazygit_0.66.0_darwin_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/613198449"
 
 [tools.lazygit."platforms.windows-x64"]
-checksum = "sha256:bed669be29204932560836a58dc6519ba43c10ea7dc7df63af8a1d96424e191d"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_windows_x86_64.zip"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658241"
+checksum = "sha256:ed8fab4af7b8bac474084e976214a96569dea841c9f9b293502b83d8c3163e4b"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.0/lazygit_0.66.0_windows_x86_64.zip"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/613198441"
 
 [[tools.melange]]
-version = "0.61.2"
+version = "0.61.4"
 backend = "aqua:chainguard-dev/melange"
 
 [tools.melange."platforms.linux-arm64"]
-checksum = "sha256:5f880b955f2482452b901bda39add46548a747501363a65b9868fbb3c795927f"
-url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.2/melange_0.61.2_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/600951023"
+checksum = "sha256:ca5f777f9011d0b024c7cc1032200ddb5f614d80f1aaa826f61205392bf985be"
+url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.4/melange_0.61.4_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/614082758"
 
 [tools.melange."platforms.linux-arm64-musl"]
-checksum = "sha256:5f880b955f2482452b901bda39add46548a747501363a65b9868fbb3c795927f"
-url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.2/melange_0.61.2_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/600951023"
+checksum = "sha256:ca5f777f9011d0b024c7cc1032200ddb5f614d80f1aaa826f61205392bf985be"
+url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.4/melange_0.61.4_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/614082758"
 
 [tools.melange."platforms.linux-x64"]
-checksum = "sha256:9a78ee4bd5bd166b5d358b49249e0e6f25e10efede51cf407262218d8a65d78e"
-url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.2/melange_0.61.2_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/600951028"
+checksum = "sha256:3b864f61399ea05f402178c8e127bf9d46a9c5b2ff4965e59a07b40ce2d2d55f"
+url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.4/melange_0.61.4_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/614082671"
 
 [tools.melange."platforms.linux-x64-musl"]
-checksum = "sha256:9a78ee4bd5bd166b5d358b49249e0e6f25e10efede51cf407262218d8a65d78e"
-url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.2/melange_0.61.2_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/600951028"
+checksum = "sha256:3b864f61399ea05f402178c8e127bf9d46a9c5b2ff4965e59a07b40ce2d2d55f"
+url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.4/melange_0.61.4_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/614082671"
 
 [tools.melange."platforms.macos-arm64"]
-checksum = "sha256:eaa2636e450b72eedb9d7afe9541cadb3be4ead2423e5c9d1b077943374ea802"
-url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.2/melange_0.61.2_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/600950971"
+checksum = "sha256:50d98b39d602a4e7be604227cb3657e4891496c6729ce30b7b9f921f764d40a7"
+url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.4/melange_0.61.4_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/614082756"
 
 [tools.melange."platforms.macos-x64"]
-checksum = "sha256:0a65c2b8d27c77ee4791aa0dee01a9481bc7e952a79c460602eb27793ecc0a4a"
-url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.2/melange_0.61.2_darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/600951026"
+checksum = "sha256:7266a09e5ff2e5befc0e1d813be43d773c3999450e9f0eeaf44e22821cc804a3"
+url = "https://github.com/chainguard-dev/melange/releases/download/v0.61.4/melange_0.61.4_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/chainguard-dev/melange/releases/assets/614082753"
 
 [[tools.neovim]]
 version = "stable"
